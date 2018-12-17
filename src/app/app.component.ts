@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { User } from './data-card/user.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Demo1';
+  user: User;
+
+constructor(){
+  this.user = new User();
+  this.user.name = "Devendra";
+  this.user.title = "software Developer";
+  this.user.address = "102, Mitrangan, Baner",
+  this.user.mobile = ['9999999999','8888888888']
 }
+ngOnInit() {
+  console.log(User);
+  
+}
+}
+

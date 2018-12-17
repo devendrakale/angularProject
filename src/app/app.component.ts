@@ -18,7 +18,6 @@ constructor(){
 }
 ngOnInit() {
   console.log(User);
-  
 }
 }
 

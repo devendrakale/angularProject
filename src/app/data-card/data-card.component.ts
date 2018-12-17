@@ -8,7 +8,7 @@ import { User } from './user.model';
 })
 export class DataCardComponent implements OnInit {
 
-  @Input('user') user = User;
+  @Input('userObj') user = User;
 
   constructor() { 
   }
